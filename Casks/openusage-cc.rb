@@ -12,6 +12,12 @@ cask "openusage-cc" do
 
   app "OpenUsageCC.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/OpenUsageCC.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/com.sunstory.openusage.cc",
     "~/Library/Logs/com.sunstory.openusage.cc",
