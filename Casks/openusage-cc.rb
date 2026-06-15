@@ -1,6 +1,6 @@
 cask "openusage-cc" do
-  version "0.6.28"
-  sha256 "f869ae56a0f589a4e81624c5f6292f91e649c0e45f3e77ebabef72e457dbbc3b"
+  version "1.0.0"
+  sha256 "b28cf8cdadd91a5e23c586a74c79443511cdb0e379b8318c0a0856850a339600"
 
   url "https://github.com/FrankieeW/openusage/releases/download/v#{version}/OpenUsageCC_#{version}_aarch64.dmg",
       verified: "github.com/FrankieeW/openusage/"
