@@ -1,6 +1,6 @@
 cask "openusage-cc" do
   version "0.6.28"
-  sha256 :no_check
+  sha256 "f869ae56a0f589a4e81624c5f6292f91e649c0e45f3e77ebabef72e457dbbc3b"
 
   url "https://github.com/FrankieeW/openusage/releases/download/v#{version}/OpenUsageCC_#{version}_aarch64.dmg",
       verified: "github.com/FrankieeW/openusage/"
@@ -8,7 +8,7 @@ cask "openusage-cc" do
   desc "AI subscription tracker — Community Collection"
   homepage "https://github.com/FrankieeW/openusage"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "OpenUsageCC.app"
 
